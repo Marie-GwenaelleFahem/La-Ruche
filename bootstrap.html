@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- On crée une ligne bootstrap (classe row), une ligne est un conteneur flex et flex-wrap -->
+    <div class="row mx-0">
+        <!-- On crée deux colonnes (classe col-) et on met en place le scénario suivant en petit les colonnes font toute la largeur de l'écran, en médium elles se partagent l'écran moitié/moitié et pour les grands écrans (extra large) on a un rapport 2/3 1/3 -->
+        <div class="col-12 col-md-6 col-xl-8 bg-success">A</div>
+        <div class="col-12 col-md-6 col-xl-4 bg-warning">B</div>
+    </div>
+    <!-- On créé un container Bootstrap, il y à deux classes de container, .container = largeur max de 1140px et marges automatiques et .container-fluid qui fait 100% -->
+    <div class="container-fluid bg-info">C</div>
+    <div class="container bg-secondary">
+        <!-- Utilisation de la classe Bootstrap d-flex pour avoir un parent flex -->
+        <!-- Utilisation de la classe Bootstrap flew-wrap pour avoir des enfatns de cette boîte qui acceptent de retourner à la ligne -->
+        <!-- Utilisation de la classe Bootstrap justify-content-between pour obtenir le même résultat que la propriété css justify-content: space-between-->
+        <div class="d-flex flex-wrap justify-content-between mt-5 mt-md-3">
+            <div class="col-2 bg-danger">1</div>
+            <div class="col-2 bg-danger">2</div>
+            <div class="col-2 bg-danger">3</div>
+        </div>
+    </div>
+    <!-- On crée un lien avec la librairie javascrip jQuery (jQuery doit toujours être lié en premier) -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- On crée un lien vers la librairie bootstrap qui nécessite jQuery -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
